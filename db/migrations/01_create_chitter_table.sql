@@ -1,0 +1,1 @@
+CREATE TABLE chitters(username VARCHAR(15), peep VARCHAR(140));
