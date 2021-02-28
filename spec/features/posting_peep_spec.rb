@@ -10,10 +10,10 @@ feature 'Posting a Peep' do
   feature 'posting a peep' do
     scenario 'it should show the peep' do
       visit('/home')
-      fill_in('Peep', with: 'This is my first peep')
-      click_button('Submit')
-      
-      expect(page).to have_content 'This is my first peep'
+      fill_in('peep', with: 'This is my first peep!')
+      click_button('Peep')
+
+      expect(page).to have_content 'This is my first peep!'
     end
   end
 end
